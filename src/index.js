@@ -6,16 +6,13 @@ import reportWebVitals from './reportWebVitals';
 
 import './index.scss';
 import App from './App';
-import { CartProvider } from './contexts/cart-context';
 import { store } from './store/store';
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter>
-            <CartProvider>
-              <App />
-            </CartProvider>
+        <App />
       </BrowserRouter>
     </Provider>
   </React.StrictMode>,
